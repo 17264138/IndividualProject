@@ -2,4 +2,8 @@
 
 	{% block content %}
 		<h1>Template exists!</h1>
+	<form method="POST" action=""> {% csrf_token %}
+		{{form.as_p}}
+	<input type='submit' value='Join' class='btm' />
+	</form>
 	{% endblock %}
