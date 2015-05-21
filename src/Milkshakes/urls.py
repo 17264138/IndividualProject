@@ -4,9 +4,9 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
+	url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'joinmech.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+    #allows us to accept reference ID into url by using an argument
+    url(r'^(?P<ref_id>.*)$', 'joinmech.views.share', name=''),
 )

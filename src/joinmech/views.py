@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect, Http404
 from .forms import JoinForm
 from .models import Join
 
@@ -17,10 +17,21 @@ def get_ip(request):
 #
 import uuid
 
-#this function give a user a unique, uppercase reference ID
+#this function give a user a unique, uppercase reference ID and validates it
+#if the reference ID does exist, the function runs again and gives a new ref id
 def get_ref_id():
 	ref_id = str(uuid.uuid4())[:11].replace('-', '').upper()
-	return ref_id
+	try:
+		id_exists = Join.objects.get(ref_id=ref_id)
+		get_ref_id()
+	except:
+		return ref_id
+
+#this function redirects user to url with ref_id
+def share(request, ref_id):
+	context = {}
+	template = "home.html"
+	return render(request,template,context)
 
 #this function controls the view after operations are done on the form and POSTS the input
 def home(request):
@@ -34,7 +45,7 @@ def home(request):
 				new_join_old.ip_address=get_ip(request)
 				new_join_old.save()
 		#redirect here
-
+		return HttpResponseRedirect("/%s" %(new_join_old.ref_id))
 		#new_join.ip_address = get_ip(request)
 		#new_join.save()
 
