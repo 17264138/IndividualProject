@@ -29,10 +29,20 @@ def get_ref_id():
 
 #this function redirects user to url with ref_id to the share page
 def share(request, ref_id):
-	Join.objects.filter(friend=obj).count()
-	context = {"ref_id": ref_id}
-	template = "share.html"
-	return render(request,template,context)
+	try:
+		join_obj = Join.objects.get(ref_id=ref_id)
+		friends_referred = Join.objects.filter(friend=obj)
+		count = join_obj.referral.all().count()
+
+		#the ref_url is set here rather than in settings folder
+		ref_url = "http://127.0.0.1:8000/?ref=%s" %(join_obj.ref_id)
+		context = {"ref_id": join_obj.ref_id, "count": count, "ref_url": ref_url}
+		template = "share.html"
+		return render(request,template,context)
+	#if there is no ref_id, raise exception
+	except:
+		raise Http404
+
 
 
 #this function controls the view after various operations are done on the form and POSTS the input
