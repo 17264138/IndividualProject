@@ -1,11 +1,17 @@
+<!-- 
+    Author: Orielle Gomes
+    Date: 20/05/2015
+    Description: This is the parent html from which all other templates inherit
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
     <meta name="milkshakes webapp" content="">
     <meta name="orielle" content="">
     <link rel="icon" href="/home/orielle/Documents/IndividualProject/Images/4659.png">
@@ -16,15 +22,13 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-
-
     <!-- Bootstrap core CSS -->
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-
     <link href="http://getbootstrap.com/jumbotron.css" rel="stylesheet">
 
+    <!--You can add customization to bootstrap CSS using these style tags below-->
     <style>
       .jumbotron {
         padding: 0px;
@@ -51,8 +55,6 @@
   </head>
 
   <body>
-
-
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
@@ -63,17 +65,17 @@
     </div>
 
     <div class="container">
-      
-{% block content %}
-{% endblock %}
+     <!-- our custom content from other templates gets inserted in the block below-->
 
-      <hr>
+     {% block content %}
+     {% endblock %}
 
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
+     <hr>
+
+     <footer>
+      <p>&copy; Company 2014</p>
+    </footer>
     </div> <!-- /container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
