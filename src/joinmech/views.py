@@ -31,7 +31,7 @@ def get_ref_id():
 def share(request, ref_id):
 	try:
 		join_obj = Join.objects.get(ref_id=ref_id)
-		friends_referred = Join.objects.filter(friend=obj)
+		friends_referred = Join.objects.filter(friend=join_obj)
 		count = join_obj.referral.all().count()
 
 		#the ref_url is set here rather than in settings folder
