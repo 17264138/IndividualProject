@@ -80,8 +80,6 @@ if ($signUpCount == 0){
 {% endblock %}
 
 
-
-
 {% block content %}
 {% include "navbar.html" %}
 
@@ -90,32 +88,32 @@ if ($signUpCount == 0){
       <div class="container">
       <div class='row'>
         <div class='col-md-6 pull-right' style='text-align:center;'>
-        <i class="fa fa-share-alt fa-5x"></i>
+        <img src="{% static 'icons/share.png' %}"  />
           <h1>Invite Friends &amp;<br/> Earn Rewards</h1>
-          <p>Share your unique link below via Email, Facebook, Twitter, Reddit, or LinkedIn to earn rewards from LaunchWithCode.com.</p>
+          <p>Share your unique link below via Email, Facebook, Twitter, Reddit, or LinkedIn to earn rewards from Milkshake.com.</p>
           <div class='well' style='background-color:white;'>{{ ref_url }}</div>
           Share<br/>
 
           <a href="https://www.facebook.com/sharer/sharer.php?u={{ ref_url }}" target="_blank">
-          <i class="fa fa-facebook-square fa-4x" style="color:#3b5998"></i>
+          <img src="{% static 'icons/facebook.png' %}"  />
           </a>
 
           <a href="https://twitter.com/home?status=Hello%20this%20is%20a%20%23tag%20that%20I%20want%20to%20share%20at%20some%20point.%20Tweet%20%40justinmitchel.%20{{ ref_url }}" target="_blank">
 
-           <i class="fa fa-twitter-square fa-4x" style="color:#4099FF"></i>
+           <img src="{% static 'icons/twitter.png' %}"  />
 		</a>
 			<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ ref_url}}&title=Hello%20this%20this%20is%20a%20title.&summary=Hello%20this%20this%20is%20a%20title.&source={{ ref_url }}" target="_blank">
-            <i class="fa fa-linkedin-square fa-4x" style="color:#007bb6"></i>
+            <img src="{% static 'icons/linkdin.jpg' %}"  />
             </a>
             <a href="http://www.reddit.com/submit?url={{ ref_url }}&title=Hello%20this%20this%20is%20a%20title." target="_blank">
-             <i class="fa fa-reddit-square fa-4x" style="color:#900020"></i>
+             <img src="{% static 'icons/reddit.png' %}"  />
              </a>
              <a href='https://plus.google.com/share?url=http://codingforentrepreneurs.com' target="_blank">
-              <i class="fa fa-google-plus-square fa-4x" style="color:#D34836"></i>
+              <img src="{% static 'icons/google+.jpg' %}"  />
               </a>
         </div>
         <div class='col-md-6 pull-left'>
-          <img src="{% static 'img/launch.jpg' %}" class='img-responsive img-rounded' />
+          <img src="{% static 'images/logo.jpg' %}" class='img-responsive' />
           </div>
           </div>
       </div>
@@ -134,8 +132,7 @@ Joined number is: {{ count }}<br/>
 			  </div>
 		</div>
 		<h4>Reward Name</h4>
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
+		<img src="{% static 'icons/rank1.png' %}"  />
 		<hr/>
 		<span style='text-align:left !important;'>
 		<h5>Rewards Include:</h5>
@@ -154,8 +151,7 @@ Joined number is: {{ count }}<br/>
 			  </div>
 		</div>
 		<h4>Reward Name</h4>
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
+		<img src="{% static 'icons/rank2.png' %}"  />
 		<hr/>
 		<span style='text-align:left !important;'>
 		<h5>Rewards Include:</h5>
@@ -174,8 +170,7 @@ Joined number is: {{ count }}<br/>
 			  </div>
 		</div>
 		<h4>Reward Name</h4>
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
+		<img src="{% static 'icons/rank3.png' %}"  />
 		<hr/>
 		<span style='text-align:left !important;'>
 		<h5>Rewards Include:</h5>
@@ -194,8 +189,7 @@ Joined number is: {{ count }}<br/>
 			  </div>
 		</div>
 		<h4>Reward Name</h4>
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
+		<img src="{% static 'icons/rank4.png' %}"  />
 		<hr/>
 		<span style='text-align:left !important;'>
 		<h5>Rewards Include:</h5>
@@ -208,40 +202,6 @@ Joined number is: {{ count }}<br/>
 	</div>
 
 </div>
-<div class='row featured-row'>
-  <div class='col-sm-12'>
-   
- 	
-    <div class='col-sm-3'>
-      <i class="fa fa-upload fa-3x"></i>
-      <h2>Feature</h2>
-      <p class='lead'>
-      Some feature text goes here.
-      </p>
-    </div>
-    <div class='col-sm-3'>
-      <i class="fa fa-upload fa-3x"></i>
-      <h2>Feature</h2>
-      <p class='lead'>
-      Some feature text goes here.
-      </p>
-    </div>
-     <div class='col-sm-3'>
-      <i class="fa fa-upload fa-3x"></i>
-      <h2>Feature</h2>
-      <p class='lead'>
-      Some feature text goes here.
-      </p>
-    </div>
-     <div class='col-sm-3'>
-      <i class="fa fa-upload fa-3x"></i>
-      <h2>Feature</h2>
-      <p class='lead'>
-      Some feature text goes here.
-      </p>
-    </div>
-
-
 
   </div>
 

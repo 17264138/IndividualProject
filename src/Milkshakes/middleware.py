@@ -11,7 +11,7 @@ class ReferMiddleware():
 		
 		#setting a session variable of reference to the object it's referencing
 		if obj:
-			request.session['ref'] = obj.id
+			request.session['join_id_ref'] = obj.id
 		
 
 		

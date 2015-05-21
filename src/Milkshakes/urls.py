@@ -8,5 +8,5 @@ urlpatterns = patterns('',
     url(r'^$', 'joinmech.views.home', name='home'),
 
     #allows us to accept reference ID into url by using an argument
-    url(r'^(?P<ref_id>.*)$', 'joinmech.views.share', name=''),
+    url(r'^(?P<ref_id>.*)$', 'joinmech.views.share', name='share'),
 )

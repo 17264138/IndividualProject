@@ -28,7 +28,7 @@
     <style>
       body 
         {
-          padding-top: 0px;
+          padding-top: 20px;
           padding-bottom: 0px;
         }  
       .navbar
@@ -50,8 +50,8 @@
         }
       .navbar-inverse 
         {
-          background-color: #E47541 !important;
-          border-color: #E47541 !important;
+          background-color: #286090 !important;
+          border-color: #286090 !important;
         }
       .jumbotron h1 
         {
@@ -67,7 +67,7 @@
     {% block styles %}
     {% endblock %}
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!-- Just for debugging purposes-->
     <!--[if lt IE 9]><script src="view-source:http://getbootstrap.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
@@ -82,27 +82,13 @@
   </head>
 
   <body>
-
-
-
-  
-
-
-
-
-     <hr>
-
-     {% block content %}
-
-
-{% endblock %}
-
-     <footer>
-      <p>&copy; Company 2014</p>
-          <div class="container">
-    </footer>
-    </div> <!-- /container -->
-
+    {% block content %}
+    {% endblock %}
+    <div class="container">
+      <footer>
+        <p>&copy; Milkshake Company 2014</p>  
+      </footer>
+    </div> 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

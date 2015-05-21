@@ -3,10 +3,74 @@
 	{
 		"selected_items":
 		[
+			[
+				"ref",
+				"ref_url"
+			],
+			[
+				"obj",
+				"objects"
+			],
+			[
+				"rel",
+				"related_name"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"get",
+				"get_ref_id"
+			],
+			[
+				"new",
+				"new_join_old"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"fo",
+				"forms"
+			],
+			[
+				"ip",
+				"ip_address"
+			],
+			[
+				"Join",
+				"JoinAdmin"
+			],
+			[
+				"sty",
+				"style"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "src/Milkshakes/templates/home.html",
+			"settings":
+			{
+				"buffer_size": 2124,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Milkshakes/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 3146,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -32,6 +96,21 @@
 	},
 	"file_history":
 	[
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/templates/home.html",
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/templates/navbar.html",
+		"/home/orielle/Documents/IndividualProject/src/joinmech/views.py",
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/settings.py",
+		"/home/orielle/Documents/IndividualProject/src/joinmech/models.py",
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/middleware.py",
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/urls.py",
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/templates/share.html",
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/templates/base.html",
+		"/home/orielle/Documents/IndividualProject/src/joinmech/admin.py",
+		"/home/orielle/Documents/IndividualProject/src/joinmech/forms.py",
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/views.py",
+		"/home/orielle/Documents/IndividualProject/src/Milkshakes/__init__.py",
+		"/home/orielle/Documents/IndividualProject/Milkshakes/Milkshakes/urls.py",
+		"/home/orielle/Documents/IndividualProject/Milkshakes/Milkshakes/settings.py"
 	],
 	"find":
 	{
@@ -66,8 +145,65 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/Milkshakes/templates/home.html",
+					"settings":
+					{
+						"buffer_size": 2124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1179,
+								1179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Milkshakes/templates/base.html",
+					"settings":
+					{
+						"buffer_size": 3146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2232,
+								2232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -77,7 +213,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{

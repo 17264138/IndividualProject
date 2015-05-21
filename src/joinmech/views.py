@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponseRedirect, Http404
-from .forms import JoinForm
+from .forms import EmailForm, JoinForm
 from .models import Join
+from django.conf import settings
 
 #this function accepts the user's IP address in two forms
 def get_ip(request):
